@@ -1,0 +1,447 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html{
+    height: 100%;
+}
+/*-----------------------------------------------------*/
+/*Menu mobile*/
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.menu{
+    color: white;
+    background-color: #151c48;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    min-width: 360px;
+}
+#mobileMenu div{
+    width: 35px;
+    height: 2px;
+    background-color: white;
+    margin: 10px;
+    display: none;
+}
+.nav-list ul{
+    display: flex;
+    list-style-type: none;
+    transition: .3s;
+}
+.nav-list li{
+    padding: 10px;
+    transition: .2s;
+    cursor: pointer;
+
+}
+.nav-list li:hover{
+    background-color: #606060;
+    text-decoration: underline;
+}
+#listaMenu a{
+    text-decoration: none;
+    color: white;
+}
+/*--------------------------------------------------------*/
+/*Saiba Mais*/
+.saibaMais{
+    background-image: linear-gradient(270deg, #FF5E44 0%, #7D00FF 100%);
+    padding: 10px;
+    text-align: center;
+    color: white;
+    min-width:360px;
+}
+/*-----------------------------------------------------------*/
+/*Secão corpo*/
+
+
+.corpoFora{
+    height: 500px;
+    min-width: 360px;
+    background-color: #151c48;
+}
+.corpoDentro{
+    max-width: 1366px;
+    height: 500px;
+    background-image: url("/funcultur_corte.jpg");
+    background-size: cover;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.apresentacaoFora{
+    width: 566px;
+    color: white;
+    text-align: center;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    background-color: rgba(49, 49, 49, 0.281);
+    border-radius: 10px;
+}
+.botao{
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+.botao a{
+    text-decoration: none;
+    color: black;
+    transition: .2s;
+}
+.botao a:hover{
+    color: white;
+}
+button{
+    background-color: white;
+    border: none;
+    padding: 20px;
+    border-radius: 10px;
+cursor: pointer;
+    transition: .3s;
+}
+button:hover{
+    background-color: rgb(4, 87, 4);
+    color: white;
+    padding: 23px;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.522), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+/*------------------------------------------*/
+/*Fotos*/
+.fotosFora{
+    display: flex;
+    justify-content: center;
+    min-width:360px;
+
+    
+}
+.fotosDentro{
+    margin: 10px;
+    text-align: center;
+    max-width: 1366px;
+    box-shadow: 2px 2px 4px black;
+    background-color: white;
+    min-width:360px;
+
+}
+
+.carrossel{
+    overflow: hidden;
+    max-width: 1300px;
+    min-width:360px;
+
+}
+.titulo{
+    font-size: 50px;
+    text-align: center;
+    padding: 20px;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    min-width:360px;
+
+}
+.cinza{
+    background-color: #606060;
+    color: white;
+}
+.azul{
+    background-color: #151c48;
+    color: white;
+}
+
+.container{
+    display: flex;
+    transition: transform 1s ease-in-out;
+    transform: translatex(0);
+}
+.container img{
+    object-fit: cover;
+    width: 100%;
+}
+img{
+    cursor: pointer;
+}
+
+/*---------------------------------------*/
+.listaQuadro{
+   display: grid;
+   grid-template-columns: 2fr 2fr;
+    justify-content: space-around;
+}
+.item1{
+
+    grid-row: 1/3;
+}   
+.item1 img{
+    height: 500px;
+}
+.item2 img{
+    height: 235px;
+}
+.item3 img{
+    height: 235px;
+}
+.quadro{
+    list-style-type: none;
+    width: 90%;
+    margin: 10px;
+}
+.quadro img{
+    width: 100%;
+    border-radius: 5px;
+}
+.botaoFoto button{
+    color: white;
+    background-color: #151C48;
+    margin: 20px;
+    padding: 10px 50px;
+}
+/*-----------------------------------------*/
+/*Acervos*/
+.acervoFora{
+    background-image: url("/imagens/imagens_acervo/backgroud.jpeg");
+    background-size: cover;
+    min-width:360px;
+
+}
+.acervoDentro{
+   max-width: 1366px;
+    display: flex;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.acervoConteudo{
+    background-color: rgba(0, 0, 0, 0.282);
+    border-radius: 10%;
+}
+.acervoMargem{
+    margin: 40px 20px;
+}
+.acervoMargem img{
+    -webkit-box-shadow: 9px 7px 5px rgba(0, 0, 0, 0.624);
+	-moz-box-shadow:    9px 7px 5px rgba(0, 0, 0, 0.337);
+	box-shadow:         9px 7px 5px rgba(0, 0, 0, 0.638);
+
+    transition: .2s;
+}
+.acervoMargem img:hover{
+    -moz-transform: scale(1.01);
+	-webkit-transform: scale(1.01);
+	transform: scale(1.04);
+}
+.botaoAcervo{
+    text-align: center;
+    padding-bottom: 50px;
+    
+}
+.botaoAcervo button{
+    padding: 10px 50px;
+    background-color: #151C48;
+    color: white;
+}
+/*--------------------------------------------*/
+/*Praça*/
+.pracaDentro{
+    max-width: 1366px;
+    min-width:360px;
+
+    background-color: white;
+    margin: auto;
+}
+#praca{
+    background-image: url("/pracaMunicipal/backGroundPraca.jpeg");
+    background-size: cover;
+    width: 98%;
+    height: 400px;
+    margin: 1% 1% 0 1%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+
+    transition: .2s;
+
+    text-shadow: 0.1em 0.1em 0.2em black;    
+}
+#praca:hover{
+    -moz-transform: scale(1.01);
+	-webkit-transform: scale(1.01);
+	transform: scale(1.02);
+}
+.descricaoPraca{
+    margin: 50px;
+    text-align: justify;
+    max-width: 30%;
+    color: white;
+}
+
+.fotosPraca{
+    max-width: 1366px;
+    display: flex;
+    justify-content: center;
+}
+.fotosPraca img{
+    width: 47%;
+    margin: 1%;
+
+    transition: .2s;
+}
+.fotosPraca img:hover{
+    -moz-transform: scale(1.01);
+	-webkit-transform: scale(1.01);
+	transform: scale(1.04);
+}
+.botaoPraca{
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 30px;
+}
+.botaoPraca button{
+    padding: 10px 50px;
+    background-color: #151C48;
+    color: white;
+}
+/*------------------------------------*/
+/*Rosapé*/
+footer{
+    background-color: #151c48;
+    min-width:360px;
+
+}
+.rodapeDentro{
+    max-width: 1366px;
+    height: 200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+}
+.inicio h2{
+    text-decoration: underline;
+}
+.inicio li{
+    font-size: 20px;
+    padding: 5px;
+}
+.inicio a{
+    text-decoration: none;
+    color: white;
+}
+
+.desenvolvido{
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+.desenvolvido a{
+    color: white;
+    transition: .3s;
+}
+.desenvolvido a:hover{
+    color: blue;
+}
+.contato{
+    width: 60px;
+    transition: .3s;
+}
+.contato:hover{
+    width: 65px;
+}
+.contato img{
+    width: 100%;
+}
+
+/* -------------------------------------------------------- */
+/* Animação */
+
+[data-anime] {
+    opacity: 0;
+    transition: .3s;  
+}
+[data-anime = "left"] {
+    transform: translate3d(-50px, 0, 0);
+}
+[data-anime = "right"] {
+    transform: translate3d(50px, 0, 0);
+}
+[data-anime = "top"] {
+    transform: translate3d(0,-50px, 0);
+}
+
+[data-anime].animate {
+    opacity: 1;
+    transform: translate3d(0,0,0);
+}
+/*----------------------------------------------------------*/
+
+
+@media screen and (max-width: 767px) {
+    
+   /*Menu mobile*/
+   /*------------------------------------------------------*/
+    #mobileMenu{
+        cursor: pointer;
+    }
+    #mobileMenu div{ /*quadradinho do menu*/
+        display: block;
+    }
+    .nav-list ul{ /*lista do menu*/
+        position: fixed;
+        top: 45px;
+        right: 0;
+        width: 50vw;
+        height: 100vh;
+        background-color: #23232e;
+        flex-direction: column;
+        transform: translateX(100%);
+
+    }
+    #listaMenu.active{ /*adicionar classe quando apertar*/
+        transform: translateX(0);
+    }
+    .nav-list li{
+        transition: .3s;
+    }
+    .nav-list li:hover{ /*apertar em cima dos conteudo*/
+        display: block;
+        background-color: #606060;
+        color: white;
+        border-radius: 0;
+        text-decoration: underline;
+        padding: 15px;
+        margin: 0;
+
+    }
+    /*----------------------------------*/
+    /*Apresentção*/
+    .apresentacaoFora{
+        width: 80%;
+    }
+
+
+
+    /*---------------------------------*/
+    /*Acervo Indigenas*/
+    
+    .acervoMargem{
+        margin: 20px 2px;
+    }
+    .quadro img{
+        border-radius: 3px;
+    }
+    /*--------------------------------*/
+    /*Praça*/
+
+    .descricaoPraca{
+        margin: 10px;
+        text-align: justify;
+        max-width: 50%;
+        color: white;
+    }
+}

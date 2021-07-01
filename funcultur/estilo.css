@@ -1,0 +1,272 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html{
+    height: 100%;
+}
+/*-----------------------------------------------------*/
+/*Menu mobile*/
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+h1{
+    background-color: #151c48;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 50px;
+    text-decoration: underline;
+}
+.menu{
+    color: white;
+    background-color: #151c48;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    min-width: 360px;
+}
+#mobileMenu div{
+    width: 35px;
+    height: 2px;
+    background-color: white;
+    margin: 10px;
+    display: none;
+}
+.nav-list ul{
+    display: flex;
+    list-style-type: none;
+    transition: .3s;
+}
+.nav-list li{
+    padding: 10px;
+    transition: .2s;
+    cursor: pointer;
+
+}
+.nav-list li:hover{
+    background-color: #606060;
+    text-decoration: underline;
+}
+#listaMenu a{
+    text-decoration: none;
+    color: white;
+}
+/*--------------------------------------------------------*/
+/*Saiba Mais*/
+.saibaMais{
+    background-image: linear-gradient(270deg, #FF5E44 0%, #7D00FF 100%);
+    padding: 10px;
+    text-align: center;
+    color: white;
+    min-width:340px;
+}
+
+/*-----------------------------------------------------------*/
+/*Corpo*/
+.corpo{
+    max-width: 1366px;
+    margin: auto;
+    background-color: white;
+}
+.historiaFuncultur{
+    text-align: center;
+}
+.historiaFuncultur img{
+    margin-top: 10px;
+    height: 400px;
+}
+.corpo p{  
+    text-align: justify;
+    margin: 0px 40px 40px 40px;
+    font-size: 40px;
+}
+.corpo h3{
+    text-align: right;
+    font-size: 40px;
+    margin: 40px;
+}
+.fotos{
+    display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+.coluna{
+    -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 35%;
+  padding: 0 4px;
+
+}
+.coluna img{
+    margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+* {
+  box-sizing: border-box;
+}
+#modalImg{
+    max-width: 46vw;
+}
+
+#botao{
+    margin: 40px;
+    padding: 10px 20px;
+    font-size: 40px;
+    color: white;
+    background-color: black;
+    float: right;
+    z-index: 3;    
+}
+#modal{
+    visibility: hidden;
+}
+#modal_content{
+    z-index: 1;
+    max-width: 1366px;
+    overflow: hidden;
+    background-color: rgba(134, 134, 134, 0.7);   
+    position: fixed;
+    top: 0%;
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.modal_content img{
+    margin: 7vw 22% 10vw 32.5%;
+    width: 35%;
+    
+}
+#modal img{
+    transform: scale(0);
+    transition: all linear .2s;
+}
+.modal_active #modalImg{
+    transform: scale(1);
+}
+#modal.modal_active{
+    visibility: visible;
+}
+
+/*------------------------------------*/
+/*Rosapé*/
+footer{
+    background-color: #151c48;
+    margin-top: 10px;
+}
+.rodapeDentro{
+    
+    max-width: 1366px;
+    height: 200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+}
+.inicio h2{
+    text-decoration: underline;
+}
+.inicio li{
+    font-size: 20px;
+    padding: 5px;
+}
+.inicio a{
+    text-decoration: none;
+    color: white;
+}
+.desenvolvido{
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+.desenvolvido a{
+    color: white;
+    transition: .3s;
+}
+.desenvolvido a:hover{
+    color: blue;
+}
+.contato{
+    width: 60px;
+    transition: .3s;
+}
+.contato:hover{
+    width: 65px;
+}
+.contato img{
+    width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+    
+     /*Menu mobile*/
+   /*------------------------------------------------------*/
+   #mobileMenu{
+    cursor: pointer;
+}
+#mobileMenu div{ /*quadradinho do menu*/
+    display: block;
+}
+.nav-list ul{ /*lista do menu*/
+    position: fixed;
+    top: 45px;
+    right: 0;
+    width: 50vw;
+    height: 100vh;
+    background-color: #23232e;
+    flex-direction: column;
+    transform: translateX(100%);
+
+}
+#listaMenu.active{ /*adicionar classe quando apertar*/
+    transform: translateX(0);
+}
+.nav-list li{
+    transition: .3s;
+}
+.nav-list li:hover{ /*apertar em cima dos conteudo*/
+    display: block;
+    background-color: #606060;
+    color: white;
+    border-radius: 0;
+    text-decoration: underline;
+    padding: 15px;
+    margin: 0;
+
+}
+    h1{
+        font-size: 30px;
+    }
+    .historiaFuncultur{
+        display: block;
+    }
+    .historiaFuncultur img{
+        width: 95%;
+        height: 300px;
+    }
+    .corpo p{  
+        font-size: 22px;
+        margin: 0px 20px 10px 20px;
+    }
+    .coluna {
+    flex: 100%;
+    max-width: 100%;
+  }
+  #modalImg{
+    max-width: 90vw;
+}
+    .corpo h3{
+        font-size: 25px;
+    }
+    
+}
